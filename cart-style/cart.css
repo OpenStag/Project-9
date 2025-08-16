@@ -326,11 +326,9 @@ footer {
 }
 
 .footer-logo {
-    font-family: 'Cinzel', serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: #2c2c54;
     padding: 0 20px;
+    align-items: center;
+    align-content: center;
 }
 
 .footer-top h4 {
@@ -350,16 +348,15 @@ footer {
     transition: color 0.3s ease;
 }
 
-.footer-top a:hover {
-    color: #2c2c54;
-    text-decoration: underline;
-}
-
 .social {
-    margin-top: 20px;
     display: flex;
     gap: 15px;
     padding: 0 20px;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    left: 1140px;
+    opacity: 1;
 }
 
 .social a {
