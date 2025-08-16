@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Browse - Bookstore</title>
+  <link rel="stylesheet" href="browse.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">BOOKSTORE.LK</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <div class="main">
+      <div class="left">
+        <h2 style="margin-top:0">Browse Books</h2>
+        <div class="grid" id="products-grid">
+          <!-- JS will inject products here -->
+        </div>
+      </div>
+
+      <aside class="right">
+        <div class="cart-box">
+          <h3>Cart preview</h3>
+          <div id="cart-preview"></div>
+          <div style="margin-top:12px">
+            <a class="btn" href="cart.html">Go to Cart</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer">© Bookstore.lk</footer>
+  </div>
+
+  <script src="browse.js"></script>
+  <script>
+    // sample product list (replace by fetch('/api/products') to load from server)
+    const products = [
+      { id:'b1', title:'This Is Our Story', author:'Ashley Elston', price:1800, img:'https://picsum.photos/seed/book1/300/400' },
+      { id:'b2', title:'It Ends With Us', author:'Colleen Hoover', price:2400, img:'https://picsum.photos/seed/book2/300/400' },
+      { id:'b3', title:'Black Hearts', author:'Jenna Wood', price:2200, img:'https://picsum.photos/seed/book3/300/400' },
+      { id:'b4', title:'Atomic Habits', author:'James Clear', price:3400, img:'https://picsum.photos/seed/book4/300/400' }
+    ];
+
+    const grid = document.getElementById('products-grid');
+    products.forEach(p => {
+      const c = document.createElement('div');
+      c.className = 'card';
+      c.innerHTML = `
+        <img src="${p.img}" alt="">
+        <h4>${p.title}</h4>
+        <p class="small">${p.author} • ${p.price} LKR</p>
+        <div style="margin-top:8px">
+          <button class="btn" onclick='addToCart(${JSON.stringify(p)})'>Add to Cart</button>
+        </div>
+      `;
+      grid.appendChild(c);
+    })
