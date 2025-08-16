@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="cart style\cart.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart-style\cart.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cinzel-decorative-2" rel="stylesheet">           
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 
 </head>
 <body>
     <section id="header">
         
-       <a href="#"><div id="logo"><img src="img\BookStore.lk.png"></div> </a>
+       <a href="#"><div id="logo"><img src="D:\bookstore\img\BookStore.lk.png"></div> </a>
        <ul id="navbar">
-        <li class="nav-item"><a href="Home">Home</a></li>
+        <li class="nav-item"><a href="Home">HOME</a></li>
         <li class="nav-item"><a href="browse">Browse</a></li>
         <li class="nav-item"><a href="cart.html">Cart</a></li>
       </ul>
@@ -25,3 +28,138 @@
         <a href="login.html"><i class="bi bi-person-fill"></i>Login/Profile</a>
        </div>
 </section>
+
+
+ 
+    <main class="main">
+    <div class="container">
+       <div class="cart-container">
+        <div class="cart-section">
+         <h2 class="cart-title">YOUR CART</h2>
+                    
+                <div class="cart-items">
+                <div class="cart-header">
+                     <span>Book</span>
+                     <span>Total Price</span>
+                 </div>
+                        
+                       
+                <div class="cart-item">
+                 <div class="book-info">
+                    <img src="img\e4e7ac4d6d84c9ad1c0a9a500a0f3d6f754a44f9.jpg" alt="This Is Your Story" class="book-image">
+                    <div class="book-details">
+                    <div class="book-title">THIS IS YOUR STORY</div>
+                    <div class="quantity-change">
+                     <span>Qty:</span>
+                        <button class="qty-btn">-</button>
+                            <span class="qty-number">1</span>
+                                <button class="qty-btn">+</button>
+                    </div>
+                    </div>
+                    </div>
+                            <div class="book-price">1800LKR</div>
+                            <button class="delete-btn"><i class="bi bi-trash3-fill"></i></button>
+                    </div>
+                        
+                       
+                    <div class="cart-item">
+                    <div class="book-info">
+                        <img src="img\7c6d6b9076e5dcf954016a8978df1774cccccf2a.jpg" alt="It Ends With Us" class="book-image">
+                        <div class="book-details">
+                        <div class="book-title">IT ENDS WITH US</div>
+                        <div class="quantity-change">
+                            <span>Qty:</span>
+                            <button class="qty-btn">-</button>
+                            <span class="qty-number">1</span>
+                            <button class="qty-btn">+</button>
+                         </div>
+                         </div>
+                        </div>
+                    <div class="book-price">2400LKR</div>
+                   <button class="delete-btn"><i class="bi bi-trash3-fill"></i></button>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="shipping-address">
+                    <h3>Shipping Address</h3>
+                    <input type="text" placeholder="Your Address" class="address-input">
+                    <div class="address-row">
+                        <input type="text" placeholder="City/Street" class="city">
+                        <input type="text" placeholder="ZIP Code" class="zip">
+                    </div>
+                    <button class="update-btn">UPDATE</button>
+                
+                    <hr class="horizontal-line">
+
+
+                    <div class="cart-total">
+                        <h3>Cart Total</h3>
+                        <div class="total-row">
+                            <span>Cart Subtotal</span>
+                            <span>4200LKR</span>
+                     </div>
+
+                        <div class="total-row">
+                            <span>Shipping Fees</span>
+                            <span>300LKR</span>
+                        </div>
+
+                        <div class="total-row final-total">
+                            <span>Cart Total</span>
+                            <span>4500LKR</span>
+                        </div>
+                        <button class="confirm-btn">CONFIRM</button>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </main>
+
+    <footer role="contentinfo">
+        <div class="footer-top">
+            <div class="footer-logo">
+                BOOKSTORE.LK
+            </div>
+            
+            <div>
+                <h4>Quick Links</h4>
+                <a href="#">Home</a>
+                <a href="#">Browse</a>
+                <a href="cart.html"> Cart</a>
+                <a href="#">Login/Profile</a>
+            </div>
+            
+            <div>
+                <h4>Explore</h4>
+                <a href="#">on Sale</a>
+                <a href="#">Bestsellers</a>
+                
+            </div>
+            
+            <div>
+                <h4>Help</h4>
+                <a href="#">FAQs</a>
+                
+                
+                <div class="social" aria-label="Social media links">
+                    <a href="#" aria-label="Follow us on Facebook" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Follow us on Instagram" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Follow us on Twitter" target="_blank" rel="noopener">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                   </div>
+                   </div>
+                 </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 BookStore.lk - All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
