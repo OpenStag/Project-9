@@ -1,65 +1,131 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Browse - Bookstore</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookStore.lk</title>
   <link rel="stylesheet" href="browse.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="brand">BOOKSTORE.LK</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="browse.html">Browse</a>
-        <a href="cart.html">Cart <span class="cart-count">0</span></a>
-        <a href="login.html">Login</a>
-      </nav>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">BOOKSTORE.LK</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="browse.html" class="active">Browse</a>
+      <a href="cart.html">Cart</a>
+      <a href="#">Login/Profile</a>
+    </nav>
+  </header>
 
-    <div class="main">
-      <div class="left">
-        <h2 style="margin-top:0">Browse Books</h2>
-        <div class="grid" id="products-grid">
-          <!-- JS will inject products here -->
-        </div>
-      </div>
+  <!-- SEARCH BAR -->
+  <section class="search-bar">
+    <input type="text" placeholder="Book Name, Author Name...">
+    <button>Search</button>
+    <select>
+      <option>Category</option>
+      <option>Fiction</option>
+      <option>Non-Fiction</option>
+    </select>
+    <input type="range" min="0" max="3500">
+  </section>
 
-      <aside class="right">
-        <div class="cart-box">
-          <h3>Cart preview</h3>
-          <div id="cart-preview"></div>
-          <div style="margin-top:12px">
-            <a class="btn" href="cart.html">Go to Cart</a>
-          </div>
-        </div>
-      </aside>
+  <!-- BOOK GRID -->
+  <section class="book-grid">
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1452621783i/23341252.jpg" alt="This Is Our Story">
+      <span class="cart"><i class="fa fa-shopping-cart"></i></span>
+      <p><b>Book:</b> This is Our Story<br><b>Author:</b> Ashley Elston<br><b>Price:</b> 1800LKR</p>
     </div>
 
-    <footer class="footer">© Bookstore.lk</footer>
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/71PNGYHykrL.jpg" alt="It Ends With Us">
+      <span class="cart"><i class="fa fa-shopping-cart"></i></span>
+      <p><b>Book:</b> It Ends With Us<br><b>Author:</b> Colleen Hoover<br><b>Price:</b> 2400LKR</p>
+    </div>
+
+    <div class="book-card out">
+      <img src="https://m.media-amazon.com/images/I/51ZgMHwHjiL._SY445_SX342_.jpg" alt="Black Hearts">
+      <span class="cart"><i class="fa fa-shopping-cart"></i></span>
+      <span class="out-text">OUT OF STOCK</span>
+      <p><b>Book:</b> Black Hearts<br><b>Author:</b> Jenna Wood<br><b>Price:</b> 2200LKR</p>
+    </div>
+
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/81ANaVZk5LL._SY466_.jpg" alt="Atomic Habits">
+      <span class="cart"><i class="fa fa-shopping-cart"></i></span>
+      <p><b>Book:</b> Atomic Habits<br><b>Author:</b> James Clear<br><b>Price:</b> 3400LKR</p>
+    </div>
+  </section>
+
+section 02
+
+<!-- BOOK GRID -->
+  <section class="book-grid">
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/51zcUz8suLL._SY445_SX342_.jpg" alt="Love & Other Killers">
+      <span class="cart"><i class="fa fa-shopping-cart"></i></span>
+      <p><b>Book:</b> This is Our Story<br><b>Author:</b> Ashley Elston<br><b>Price:</b> 2800LKR</p>
+    </div>
+
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/41MayL7S-QL._SY445_SX342_.jpg" alt="Cain: A Short Story ">
+      <span class="cart"><i class="fa fa-shopping-cart"></i></span>
+      <p><b>Book:</b> It Ends With Us<br><b>Author:</b> Colleen Hoover<br><b>Price:</b> 1400LKR</p>
+    </div>
+
+    <div class="book-card out">
+      <img src="https://m.media-amazon.com/images/I/41IQFfbHU9L._SY445_SX342_.jpg" alt="Death Row (Alibis collection)">
+      <span class="cart"><i class="fa fa-shopping-cart"></i></span>
+      <span class="out-text">OUT OF STOCK</span>
+      <p><b>Book:</b> Black Hearts<br><b>Author:</b> Jenna Wood<br><b>Price:</b> 2200LKR</p>
+    </div>
+
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/51Bo1tzfcBL._SY445_SX342_.jpg" alt="The Housemaid">
+      <span class="cart"><i class="fa fa-shopping-cart"></i></span>
+      <p><b>Book:</b> Atomic Habits<br><b>Author:</b> James Clear<br><b>Price:</b> 3400LKR</p>
+    </div>
+  </section>
+
+
+
+  <!-- PAGINATION -->
+  <div class="pagination">
+    <button>&lt;</button>
+    <button>&gt;</button>
   </div>
 
-  <script src="browse.js"></script>
-  <script>
-    // sample product list (replace by fetch('/api/products') to load from server)
-    const products = [
-      { id:'b1', title:'This Is Our Story', author:'Ashley Elston', price:1800, img:'https://picsum.photos/seed/book1/300/400' },
-      { id:'b2', title:'It Ends With Us', author:'Colleen Hoover', price:2400, img:'https://picsum.photos/seed/book2/300/400' },
-      { id:'b3', title:'Black Hearts', author:'Jenna Wood', price:2200, img:'https://picsum.photos/seed/book3/300/400' },
-      { id:'b4', title:'Atomic Habits', author:'James Clear', price:3400, img:'https://picsum.photos/seed/book4/300/400' }
-    ];
-
-    const grid = document.getElementById('products-grid');
-    products.forEach(p => {
-      const c = document.createElement('div');
-      c.className = 'card';
-      c.innerHTML = `
-        <img src="${p.img}" alt="">
-        <h4>${p.title}</h4>
-        <p class="small">${p.author} • ${p.price} LKR</p>
-        <div style="margin-top:8px">
-          <button class="btn" onclick='addToCart(${JSON.stringify(p)})'>Add to Cart</button>
-        </div>
-      `;
-      grid.appendChild(c);
-    })
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="logo">BOOKSTORE.LK</div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="#">Cart</a>
+        <a href="#">Login/Profile</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#">Bestsellers</a>
+        <a href="#">On Sale</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">FAQs</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 BookStore.lk all rights reserved</p>
+      <div class="socials">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
