@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2 class="title">BooKSToRE.LK</h2>
+
+    <div class="container">
+
+        <div class="form-box">
+            <h3>WELCOME BACK!</h3>
+            <form>
+                <input type="email" placeholder="Email Address" required>
+
+                <div class="password-container">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <span onclick="togglePassword('loginPassword')"></span>
+                </div>
+
+                <button type="button">LOGIN</button>
+
+            </form>
+        </div>
+
+
+        <div class="form-box">
+            <h3>REGISTER HERE!</h3>
+            <form>
+                <input type="email" placeholder="Email Address" required>
+
+                <div class="password-container">
+                    <input type="password" id="regPassword" placeholder="Password" required>
+                    <span onclick="togglePassword('regPassword')"></span>
+                </div>
+
+                <div class="password-container">
+                    <input type="password" id="regConfirm" placeholder="Confirm Password" required>
+                    <span onclick="togglePassword('regConfirm')"></span>
+                </div>
+
+                <button type="button">REGISTER</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
