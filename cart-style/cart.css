@@ -48,6 +48,7 @@ body {
     font-size: 24px;
     color: #090933;
     text-decoration: underline;
+    margin: 20px;
 }
 
 .bi-person-fill {
@@ -97,6 +98,7 @@ body {
     font-weight: 600;
     font-size: 32px;
     margin-bottom: 20px;
+    margin-right: 50px;
 }
 
 .cart-item {
@@ -117,7 +119,15 @@ body {
     align-items: center;
     flex: 1;
 }
-
+.book-category{
+    font-family: 'playfair Display';
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
 .book-image {
     width: 147px;
     height: 220px;
@@ -129,10 +139,19 @@ body {
 .book-title {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 8px;
 }
 
+.qty{
+    font-family:'Playfair Display', serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
 .quantity-change {
     display: flex;
     align-items: center;
@@ -142,26 +161,32 @@ body {
 
 .qty-btn {
     background: #f0f0f0;
-    border: 1px solid #ddd;
-    width: 25px;
-    height: 25px;
-    border-radius: 3px;
+    border: 2px solid #000000;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: bold;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    font-size: 16px;
+    
 }
-
 .qty-number {
-    min-width: 20px;
     text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    font-style: bold;
+    margin-bottom: 5px;
 }
 
 .book-price {
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
+    font-family: 'Playfair Display';
     font-size: 25px;
+    font-weight: 600;
+    font-style: semi-bold;
+    margin-right: 50px; 
 }
 
 .delete-btn {
@@ -173,7 +198,7 @@ body {
     color: #000;
 }
 
-/* SHIPPING ADDRESS - Fixed */
+/*shipping address */
 .shipping-address {
     padding: 25px;
     width: 500px;
@@ -297,16 +322,13 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 30px;
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+    
 }
 
 .footer-logo {
-    font-family: 'Cinzel', serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: #2c2c54;
     padding: 0 20px;
+    align-items: center;
+    align-content: center;
 }
 
 .footer-top h4 {
@@ -326,16 +348,15 @@ footer {
     transition: color 0.3s ease;
 }
 
-.footer-top a:hover {
-    color: #2c2c54;
-    text-decoration: underline;
-}
-
 .social {
-    margin-top: 20px;
     display: flex;
     gap: 15px;
     padding: 0 20px;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    left: 1140px;
+    opacity: 1;
 }
 
 .social a {
