@@ -24,7 +24,7 @@ body {
     padding: 20px;
     background: #D3D3FF;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
-    height: 130px;
+    height: 100px;
     width: 100%; 
 }
 
@@ -37,7 +37,7 @@ body {
 .nav-item a {
     font-family: Cinzel;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 21px;
     padding: 0 30px;
     color: #090933;
     text-decoration: none;
@@ -45,16 +45,16 @@ body {
 
 .login a {
     font-family: Cinzel;
-    font-size: 24px;
+    font-size: 23px;
     color: #090933;
     text-decoration: underline;
+    margin-right: 10px;
 }
 
 .bi-person-fill {
     margin-right: 20px;
-    font-size: 25px;
+    font-size: 23px;
 }
-
 /* CART*/
 .main {
     padding: 40px 0;
@@ -75,7 +75,7 @@ body {
 .cart-title {
     font-family: 'Cinzel';
     font-weight: 700;
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 20px;
     grid-column: 1 / -1; 
 }
@@ -95,7 +95,7 @@ body {
     justify-content: space-between;
     font-family: 'Playfair Display', serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
@@ -129,7 +129,7 @@ body {
 .book-title {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 8px;
 }
 
@@ -161,13 +161,13 @@ body {
 .book-price {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .delete-btn {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     padding: 10px;
     color: #000;
@@ -176,8 +176,8 @@ body {
 /* SHIPPING ADDRESS - Fixed */
 .shipping-address {
     padding: 25px;
-    width: 500px;
-    max-width: 500px;
+    width: 480px;
+    max-width: 480px;
     height: auto;
     min-height: 600px;
     border-radius: 10px;
@@ -189,7 +189,7 @@ body {
     margin-right: 0; 
 }
 .shipping-address h3 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 20px;
     color: #333;
 }
@@ -200,7 +200,7 @@ body {
     padding: 15px 20px;
     border: 2px solid #333;
     border-radius: 30px;
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 15px;
     outline: none;
     box-sizing: border-box;
@@ -218,15 +218,15 @@ body {
 }
 
 .update-btn, .confirm-btn {
-    width: 280px;
+    width: 250px;
     max-width: 100%;
-    height: 70px;
+    height: 60px;
     background: #000;
     color: #fff;
     border: 2px solid #D3D3FF;
     border-radius: 20px;
     font-family: 'Cinzel Decorative';
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     cursor: pointer;
     display: block;
@@ -245,7 +245,7 @@ body {
 .cart-total {
     background: white;
     width: 100%; 
-    max-width: 500px;
+    max-width: 480px;
     height: auto; 
     border-radius: 10px;
     padding: 25px;
@@ -256,7 +256,7 @@ body {
 
 .cart-total h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #333;
@@ -268,13 +268,13 @@ body {
     padding: 10px 0;
     font-family: 'Playfair Display', serif;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .final-total {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 26px;
     padding-top: 15px;
     margin-top: 10px;
     border-top: 2px solid #eee;
@@ -303,15 +303,17 @@ footer {
 
 .footer-logo {
     font-family: 'Cinzel', serif;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     color: #2c2c54;
     padding: 0 20px;
+    align-content: center;
+    align-items: center;
 }
 
 .footer-top h4 {
     font-family: 'Cinzel', serif;
-    font-size: 26px;
+    font-size: 21px;
     color: #000000;
     margin-bottom: 15px;
     padding: 0 20px;
@@ -319,7 +321,7 @@ footer {
 
 .footer-top a {
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     color: #000000;
     text-decoration: none;
     padding: 5px 20px;
@@ -351,4 +353,3 @@ footer {
     font-size: 14px;
     width: 100%;
 }
-
